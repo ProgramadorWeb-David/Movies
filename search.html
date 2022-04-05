@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body id="search">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo-movies.png" width="30" height="30" alt="peliculas">
+            </a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="now-playing.html" class="nav-link">Últimos Lanzamientos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="popular.html" class="nav-link">Populares</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="search.html" class="nav-link active">Buscador</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Buscador de Películas</h1>
+        <input id="search-movie" class="form-control" placeholder="Busca una película" onkeyup="searchMovies()"/>
+        <div class="row list-cards"></div>
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/244f112946.js" crossorigin="anonymous"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
